@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索筛选 - 欧美精品视频网</title>
+  <meta name="description" content="按关键词、分类、类型、年份筛选欧美精品视频网影视内容。">
+  <meta name="keywords" content="欧美精品,欧美电影,欧美电视剧,高清视频,在线观看,影视资源">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="./index.html" aria-label="欧美精品视频网">
+        <span class="brand-mark">▶</span>
+        <span class="brand-text">欧美精品视频网</span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a class="nav-link" href="./index.html">首页</a>
+        <a class="nav-link" href="./categories.html">分类</a>
+        <a class="nav-link" href="./ranking.html">排行榜</a>
+        <a class="nav-link active" href="./search.html">搜索</a>
+      </nav>
+      <form class="header-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影视作品" aria-label="搜索影视作品">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="mobile-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-panel" hidden>
+      <a class="mobile-link" href="./index.html">首页</a>
+      <a class="mobile-link" href="./categories.html">分类</a>
+      <a class="mobile-link" href="./ranking.html">排行榜</a>
+      <a class="mobile-link active" href="./search.html">搜索</a>
+      <form class="mobile-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影视作品" aria-label="搜索影视作品">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero small">
+      <div class="container">
+        <h1>搜索筛选</h1>
+        <p>输入影片名、地区、年份、类型或标签，快速找到想看的内容。</p>
+      </div>
+    </section>
+    <section class="section container search-section">
+      <form class="filter-panel" id="searchPanel">
+        <label>
+          <span>关键词</span>
+          <input id="searchKeyword" type="search" placeholder="影片名、地区、年份、类型、标签">
+        </label>
+        <label>
+          <span>专题</span>
+          <select id="searchCategory">
+            <option value="">全部专题</option>
+            <option value="精选首映">精选首映</option>
+<option value="热门影院">热门影院</option>
+<option value="全球剧场">全球剧场</option>
+<option value="新片速递">新片速递</option>
+<option value="经典片单">经典片单</option>
+<option value="剧情剧场">剧情剧场</option>
+<option value="动作科幻">动作科幻</option>
+<option value="喜剧家庭">喜剧家庭</option>
+          </select>
+        </label>
+        <label>
+          <span>类型</span>
+          <select id="searchType">
+            <option value="">全部类型</option>
+            <option value="电影">电影</option>
+            <option value="剧">剧集</option>
+            <option value="纪录">纪录片</option>
+            <option value="综艺">综艺</option>
+            <option value="动画">动画</option>
+          </select>
+        </label>
+        <label>
+          <span>年份</span>
+          <input id="searchYear" type="search" placeholder="例如 2024">
+        </label>
+        <button type="submit">筛选</button>
+      </form>
+      <div class="search-status" id="searchStatus"></div>
+      <div class="movie-grid four" id="searchResults"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="./index.html">
+          <span class="brand-mark">▶</span>
+          <span class="brand-text">欧美精品视频网</span>
+        </a>
+        <p>欧美精品视频网站 - 提供高质量欧美影视内容，包含最新电影、电视剧、纪录片等精品视频资源</p>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类</a>
+        <a href="./ranking.html">排行榜</a>
+        <a href="./search.html">搜索</a>
+      </div>
+      <p class="copyright">© 2026 欧美精品视频网</p>
+    </div>
+  </footer>
+  <script src="./assets/search-data.js"></script>
+  <script src="./assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
